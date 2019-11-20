@@ -21,6 +21,10 @@ class Text(object):
             raise Exception(f"Corrupted data in {self.__str__()}")
         return f'{self.id},{self.type},{self.rating},{self.repeated_words},{self.average_sentence_length},{self.odd_word_ratio},{self.word_distribution}\n'
 
+    def generate(self):
+        # Add your functions here!
+        self.example()
+
     def example(self):
         if self.type == 0:
             self.rating = 5

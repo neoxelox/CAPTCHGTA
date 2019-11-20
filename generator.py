@@ -31,12 +31,7 @@ def Generator(export_format):
                         set = json.loads(sample[i])
                         text_type = 0 if sa == 'human.jsonl' else 1
                         t = Text(set['id'], text_type, set['text'])
-
-                        # ADD YOUR FUNCTION HERE!
-                        t.example()
-                        # -----------------------
-
+                        t.generate()
                         if export_format == 'CSV':
                             o.writelines(t.csvify())
-
                         pbar.update((i/NUMBER_OF_SETS) * 2)
