@@ -1,6 +1,7 @@
 from renderer import Render
 from downloader import DownloadDatasets
 from sampler import Sampler
+from generator import Generator
 
 
 def downloadDatasets(datasets_selected):
@@ -21,7 +22,10 @@ def generateData(datasets_selected, export_format):
         print('No export format selected!\n')
         return
 
-    Sampler(datasets_selected)
+    number_of_sets = int(input('Number of sets: '))
+
+    Sampler(datasets_selected, NUMBER_OF_SETS=number_of_sets)
+    Generator(export_format)
 
     print('\n')
 
