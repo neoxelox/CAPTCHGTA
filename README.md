@@ -8,6 +8,13 @@ B7 Project for FIB PE subject
 
 `pip install -r requirements.txt`
 
+```python
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('punkt')
+```
+
 ## USAGE
 `python main.py`
 
