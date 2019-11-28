@@ -3,7 +3,6 @@ from downloader import DownloadDatasets
 from sampler import Sampler
 from generator import Generator
 
-
 def downloadDatasets(datasets_selected):
     if not datasets_selected:
         print('No selected datasets!\n')
