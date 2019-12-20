@@ -22,6 +22,8 @@ def Generator(export_format):
     outputdir = outputdir.replace('\\', '/')  # Needed for Windows
 
     with open(f'./{outputdir}/{outputfile}', 'w') as o:
+        if export_format == 'CSV':
+            o.writelines(f'ID,TYPE,REP_RATIO,AVG_LENGTH,ODD_RATIO\n')
         for sa in samples:
             with open(f'./{subdir}/{sa}', 'r') as f:
                 sample = list(f)

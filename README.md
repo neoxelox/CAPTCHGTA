@@ -16,6 +16,13 @@ nltk.download('punkt')
 ```
 
 ## USAGE
+##### Download, Sample and Generate data:
 `python main.py`
+
+##### Predict Text author from Dataset:
+`python dataset_to_predictor.py`
+
+##### Predict Text author from Input:
+`python input_to_predictor.py`
 
 **Note!** Use this program with special care! No error handling was programmed!
