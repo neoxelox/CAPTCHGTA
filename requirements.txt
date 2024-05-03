@@ -1,4 +1,4 @@
 inquirer==2.6.3
 pyfiglet==0.8.post1
-tqdm==4.38.0
+tqdm==4.66.3
 nltk==3.4.5
